@@ -3,26 +3,6 @@
 <head>
     <style>
 div {
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
-    border-radius: 20px;
-    position: absolute;
-    color: white;
-    text-align: center;
-    top:50px;
-    left: 100px;
-}
-#div-1 {
-    background-color: black;
-}
-#div-2 {
-    transform: skew(50deg, -15deg);
-    background-color: tomato;
-    opacity: 0.8;
-}
-
-div {
     line-height: 150px;
 }
 #container {
@@ -58,7 +38,20 @@ div {
     <title>Document</title>
 </head>
 <body>
-    <div id="div-1">original</div>
-    <div id="div-2">transformirani</div>
+    
+    <div id="container">
+        <div class="group">
+            <div class="original">Original</div>
+            <div class="transformed" id="transformed-1">transformed</div>
+        </div>
+        <div class="group">
+            <div class="original">Original</div>
+            <div class="transformed" id="transformed-2">transformed</div>
+        </div>
+        <div class="group">
+            <div class="original">Original</div>
+            <div class="transformed" id="transformed-3">transformed</div>
+        </div>
+    </div>
 </body>
 </html>
